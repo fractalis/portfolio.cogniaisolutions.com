@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+
+  --menu-item: 201, 252, 254;
+  --menu-item-background-color: 45, 204, 112;
+
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  width: 100vw;
+}
+
+.parallax-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.parallax-image {
+  position: absolute;
+  background-image: url('https://portfolio.cogniaisolutions.com/images/future_neural_network_001.png');
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.body-container {
+  background-color: #222;
+  min-height: 100vh;
+  width: 100vw;
+}

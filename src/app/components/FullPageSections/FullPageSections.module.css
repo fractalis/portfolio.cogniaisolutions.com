@@ -1,0 +1,29 @@
+.section {
+    height: 100vh;
+    margin-bottom: 150px;
+    margin-top: 150px;
+  }
+  
+  .grey-main {
+    background-color: #222;
+  }
+  
+  .grey-alt {
+    background-color: #333;
+  }
+
+  .section:nth-child(odd) {
+    background-image: url('https://portfolio.cogniaisolutions.com/images/neural_network_visual_001.png'); /* Specify the path to your parallax image */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;    
+    z-index: -1;
+  }
+  
+  .section:nth-child(even) {
+    background-image: url('https://portfolio.cogniaisolutions.com/images/future_neural_network_001.png'); /* Specify the path to another parallax image */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+  }
